@@ -82,3 +82,23 @@ function loopmusic(){
         return
     }
 }
+
+function shuffmusic(){
+    var shuffle = document.getElementById("shuff")
+    if (shuffle.className == "on"){
+        var shuffle_icon = document.getElementById("shuff-ico")
+        
+        
+        shuffle_icon.src = "img/shuffoff.png"
+        shuffle.className = "off"
+        return
+    }
+    if (shuffle.className == "off"){
+        var shuffle_icon = document.getElementById("shuff-ico")
+        
+        
+        shuffle_icon.src = "img/shuffon.png"
+        shuffle.className = "on"
+        return
+    }
+}
