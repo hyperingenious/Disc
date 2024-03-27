@@ -27,11 +27,11 @@
             <div class="play-end" id="play-full">2:39</div>
         </div>
         <div class="btn">
-            <button id="loop" onclick="alert('Loop')"><img class="play-btn" src="img/loopoff.png" alt=""></button>
-            <button id="back" onclick="alert('Back')"><img class="play-btn" src="img/back.png" alt=""></button>
+            <button id="loop" class="off" onclick="loopmusic()"><img id="loop-ico" class="play-btn" src="img/loopoff.png" alt=""></button>
+            <button id="back" onclick="alert('Back')"><img id="back-ico" class="play-btn" src="img/back.png" alt=""></button>
             <button id="play" class="off" onclick="playmusic()"><img id="play-ico" class="play-btn" src="img/play.png" alt=""></button>
-            <button id="next" onclick="alert('Next')"><img class="play-btn" src="img/next.png" alt=""></button>
-            <button id="shuff" onclick="alert('Shuff')"><img class="play-btn" src="img/shuffon.png" alt=""></button>
+            <button id="next" onclick="alert('Next')"><img id="next-ico" class="play-btn" src="img/next.png" alt=""></button>
+            <button id="shuff" onclick="alert('Shuff')"><img id="shuff-ico" class="play-btn" src="img/shuffon.png" alt=""></button>
         </div>
     </section>
     <audio  src="main.mp3" id="music"></audio>

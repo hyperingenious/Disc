@@ -1,8 +1,8 @@
 
 var music = document.getElementById("music")
-const barFull = document.getElementById("bar-full")
+var barFull = document.getElementById("bar-full")
 const barNow = document.getElementById("bar-now")
-
+var loop = document.getElementById("loop")
 
 
 function formatTime(seconds) {
@@ -25,6 +25,24 @@ music.ontimeupdate = function (e){
     
 }
 
+barFull.onclick = function(e){
+    
+    music.currentTime = (e.offsetX/barFull.offsetWidth)*music.duration
+}
+
+music.onended = function(e){
+    
+
+        music.currentTime = 0
+        var play_icon = document.getElementById("play-ico")
+            
+        music.pause()
+        play_icon.src = "img/play.png"
+        play.className = "off"    
+
+    
+}
+
 function playmusic(){
     var play = document.getElementById("play")
     if (play.className == "on"){
@@ -41,6 +59,26 @@ function playmusic(){
         play_icon.src = "img/pause.png"
         play.className = "on"
         music.play()
+        return
+    }
+}
+
+function loopmusic(){
+    
+    if (loop.className == "on"){
+        var loop_icon = document.getElementById("loop-ico")
+        
+        music.loop = false
+        loop_icon.src = "img/loopoff.png"
+        loop.className = "off"
+        return
+    }
+    if (loop.className == "off"){
+        var loop_icon = document.getElementById("loop-ico")
+        
+        music.loop = true
+        loop_icon.src = "img/loopon.png"
+        loop.className = "on"
         return
     }
 }
