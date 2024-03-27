@@ -128,6 +128,11 @@ gap: 20px;
     width: 90%;
 }
 
+.btn button {
+    background: none;
+    border: none;
+}
+
 #play{
     margin-left: 5%;
     margin-right: 5%;
@@ -139,4 +144,8 @@ gap: 20px;
 
 #shuff{
     margin-left: 28%;
+}
+
+#bar-now{
+    transition: 800ms ease-in-out;
 }
