@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Disc</title>
+    <link rel="stylesheet" href="./styles/test.css" />
+
+    <link
+      rel="shortcut icon"
+      href="./public/img/Group 12626.png"
+      type="image/x-icon"
+    />
+  </head>
+  <body class="k2d">
+    <div class="nav-bar-on" id="nav-bar">
+      <div>
+        <button id="nav-back" onclick="alert('back nav')">
+          <img src="./public/img/navback.png" alt="" />
+        </button>
+        <button id="nav-full-icon" onclick="alert('folder')">
+          <img src="./public/img/folder.png" alt="" />
+        </button>
+      </div>
+      <div id="system"></div>
+    </div>
+    <a onclick="alert('Settings')"
+      ><img class="settings-icon" src="./public/img/settings.png" alt=""
+    /></a>
+    <section id="player">
+      <div id="audio-title" class="title k2d">
+        Bella - Antidote Ep. Home The Album
+      </div>
+      <img id="audio-art" class="art" src="./public/img/art.png" alt="" />
+      <div class="bar">
+        <div class="play-now" id="play-now">1:27</div>
+        <div class="bar-full" id="bar-full">
+          <div class="bar-now" id="bar-now"></div>
+        </div>
+        <div class="play-end" id="play-full">2:39</div>
+      </div>
+      <div class="btn">
+        <button id="loop" class="off">
+          <img
+            id="loop-ico"
+            class="play-btn"
+            src="./public/img/loopoff.png"
+            alt=""
+          />
+        </button>
+        <button id="back" onclick="alert('Back')">
+          <img
+            id="back-ico"
+            class="play-btn"
+            src="./public/img/back.png"
+            alt=""
+          />
+        </button>
+        <button id="play" class="off">
+          <img
+            id="play-ico"
+            class="play-btn"
+            src="./public/img/play.png"
+            alt=""
+          />
+        </button>
+        <button id="next" onclick="alert('Next')">
+          <img
+            id="next-ico"
+            class="play-btn"
+            src="./public/img/next.png"
+            alt=""
+          />
+        </button>
+        <button id="shuff" class="on" onclick="shuffmusic()">
+          <img
+            id="shuff-ico"
+            class="play-btn"
+            src="./public/img/shuffon.png"
+            alt=""
+          />
+        </button>
+      </div>
+    </section>
+    <audio src="./public/main.mp3" id="music"></audio>
+    <script defer src="./script.js"></script>
+  </body>
+</html>
